@@ -30,19 +30,3 @@ class Tableoperation:
         except PermissionError:
             print("文件保存失败，请确保文件未被其他程序打开并且具有写入权限。")
         
-# def read_excel(test_data_file):
-#         wb = openpyxl.load_workbook(test_data_file)
-#         sheet = wb.worksheets[0]
-#         test_data_list = []
-#         #用例编号编号
-#         testID = []
-#         for row in sheet.iter_rows(min_row=2): # 假设第一行为标题头
-#             #是否执行
-#             execute = row[4].value
-#             if execute == 1:
-#                 # 用例编号
-#                 testID = row[0].value
-#                 test_data_list.append(row)
-#                 testID.append(testID)
-#         return test_data_list,testID,sheet,wb
-
