@@ -45,3 +45,22 @@ class testcase(unittest.TestCase):
             print(e)
             self.data_reader.Save_excel(last_cell_coordinate,'F')
             sleep(5)
+    def test003(self,driver,last_cell_coordinate,expect): #验证个人中心无法进入奖励中心
+        try:
+            driver.get("https://app.myshell.ai/")
+            sleep(4)
+            # 点击奖励中心
+            driver.find_element('xpath', '/html/body/div[1]/main/aside/div[2]/nav/div/div[2]/a[4]').click()
+            sleep(5)
+            text_of_element = driver.find_element('xpath', '/html/body/div[3]/div[3]/div/section/div/p').text
+            print(text_of_element) 
+            # 断言：比较实际文本与预期文本是否一致。
+            self.assertEqual(expect,text_of_element,"元素的文本与期望值不匹配。")
+            print('new3')
+            # 如果成功，则保存结果到Excel文件中，并标记‘T’（通过）。
+            self.data_reader.Save_excel(last_cell_coordinate,'T')
+            sleep(5)
+        except Exception as e:
+            print(e)
+            self.data_reader.Save_excel(last_cell_coordinate,'F')
+            sleep(5)

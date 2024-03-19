@@ -27,10 +27,10 @@ def run_test_cases(test_data_file):
             else:
                 last_cell_coordinate = None                 # 如果不是，则设置为None    
             # 输出结果用于验证（根据实际情况决定是否需要）last_cell_coordinate 输入是否通过
-            print("最后一个单元格的坐标:", last_cell_coordinate)
+            #print("最后一个单元格的坐标:", last_cell_coordinate)
             #method_name 获取用例编号 set转换为list并索引第0个位置
             method_name = list({testID[index]})[0]
-            print(method_name)
+            #print(method_name)
             # 使用getattr来获取method_name对应的方法对象，并执行它
             method_to_call = getattr(obj, method_name)
             if callable(method_to_call):  # 检查是否可调用
