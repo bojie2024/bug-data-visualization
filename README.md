@@ -34,7 +34,11 @@
   执行整个测试用例运行。
   
 # 使用方法 
-## 安装Selenium库：确保已经安装了Selenium库以及对应的WebDriver。
-### pip install selenium
 ## 安装python
 ### 访问Python官方网站：https://www.python.org/。
+## 安装Selenium库：确保已经安装了Selenium库以及对应的WebDriver。
+### pip install selenium
+## 使用excel表格操作测试用例是否执行
+### 1为需要执行 2或者其他值为无需执行
+![image](https://github.com/myshell-ai/qa/assets/140363121/e85076bf-9c02-46d7-a934-b84459b31944)
+
