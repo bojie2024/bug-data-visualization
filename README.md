@@ -56,5 +56,12 @@
 ## testcase 测试用例(步骤/判断用例是否通过)
 ![image](https://github.com/myshell-ai/qa/assets/140363121/bce1cb41-b26a-4ef6-b41f-570b6b3a95eb)
 ### 添加新的测试用例方法
- def XXX(self,driver,last_cell_coordinate,expect):  新增XXX方法名称需要与 excel表格编号保持一致
- 写入该条用例具体的测试步骤已经断言结果
+ ```python
+def XXX (self,driver,last_cell_coordinate,expect): 
+        try:
+            #具体测试步骤
+            sleep(5)
+        except Exception as e:
+            print(e)
+             #断言未用过 
+            sleep(5)
