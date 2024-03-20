@@ -57,11 +57,9 @@
 ![image](https://github.com/myshell-ai/qa/assets/140363121/bce1cb41-b26a-4ef6-b41f-570b6b3a95eb)
 ### 添加新的测试用例方法
  ```python
-def XXX (self,driver,last_cell_coordinate,expect): 
+def XXX (self,driver,last_cell_coordinate,expect):  #xxx 方法名称需要与excel表格编号名称保持一致 不然运行时找不到对应的测试用例步骤
         try:
             #具体测试步骤
-            sleep(5)
         except Exception as e:
             print(e)
              #断言未用过 
-            sleep(5)
