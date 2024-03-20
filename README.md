@@ -57,9 +57,14 @@
 ![image](https://github.com/myshell-ai/qa/assets/140363121/bce1cb41-b26a-4ef6-b41f-570b6b3a95eb)
 ### 添加新的测试用例方法
  ```python
+# expect 表格的预期结果  last_cell_coordinate 当前测试用例是否通过的表格位置 用来保存用例通过状态
 def XXX (self,driver,last_cell_coordinate,expect):  #xxx 方法名称需要与excel表格编号名称保持一致 不然运行时找不到对应的测试用例步骤
         try:
             #具体测试步骤
         except Exception as e:
             print(e)
-             #断言未用过 
+             #断言或者上方用例元素找不到导致用例未通过 标记用例状态
+
+## Carryout 执行整个测试自动化运行
+### 直接运行该文件
+
