@@ -30,6 +30,11 @@
   提供日志、配置管理等支持功能。
 - **报告层（Reporting Layer）**：
   生成可视化的测试报告以便回顾结果。
-
+- **执行层（Carryout）**：
+  执行整个测试用例运行。
+  
 # 使用方法 
 ## 安装Selenium库：确保已经安装了Selenium库以及对应的WebDriver。
+### pip install selenium
+## 安装python
+### 访问Python官方网站：https://www.python.org/。
