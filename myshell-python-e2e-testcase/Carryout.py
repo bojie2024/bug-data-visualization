@@ -12,7 +12,6 @@ def run_test_cases(test_data_file):
     Tableoperation_1 = DataReader.Tableoperation(test_data_file)
     test_data_list,testID,expect = Tableoperation_1.read_excel()
     #print(test_data_list) expect预期结果
-    print(test_data_list)
     # 创建类的实例
     obj = testcase.testcase(test_data_file) 
     for index,data in enumerate(test_data_list):
@@ -20,7 +19,6 @@ def run_test_cases(test_data_file):
         print(f"当前是第{index}次循环, {data}!,{testID[index]}")
         try:
             # 获取列表最后一排位置
-            print(data,'测试')
             whether = data[-1]
             if isinstance(whether, Cell):
                 last_cell_coordinate = whether.coordinate  # 获取该单元格的坐标位置信息

@@ -19,7 +19,6 @@ class testcase(unittest.TestCase):
             print(text_of_element) 
             # 断言：比较实际文本与预期文本是否一致。
             self.assertEqual(expect,text_of_element,"元素的文本与期望值不匹配。")
-            print('new3')
             # 如果成功，则保存结果到Excel文件中，并标记‘T’（通过）。
             self.data_reader.Save_excel(last_cell_coordinate,'T')
         except Exception as e:
@@ -36,7 +35,6 @@ class testcase(unittest.TestCase):
             print(text_of_element) 
             # 断言：比较实际文本与预期文本是否一致。
             self.assertEqual(expect,text_of_element,"元素的文本与期望值不匹配。")
-            print('new3')
             # 如果成功，则保存结果到Excel文件中，并标记‘T’（通过）。
             self.data_reader.Save_excel(last_cell_coordinate,'T')
         except Exception as e:
@@ -53,7 +51,6 @@ class testcase(unittest.TestCase):
             print(text_of_element) 
             # 断言：比较实际文本与预期文本是否一致。
             self.assertEqual(expect,text_of_element,"元素的文本与期望值不匹配。")
-            print('new3')
             # 如果成功，则保存结果到Excel文件中，并标记‘T’（通过）。
             self.data_reader.Save_excel(last_cell_coordinate,'T')
         except Exception as e:
@@ -67,7 +64,6 @@ class testcase(unittest.TestCase):
             print(text_of_element) 
             # 断言：比较实际文本与预期文本是否一致。
             self.assertEqual(expect,text_of_element,"元素的文本与期望值不匹配。")
-            print('new3')
             # 如果成功，则保存结果到Excel文件中，并标记‘T’（通过）。
             self.data_reader.Save_excel(last_cell_coordinate,'T')
         except Exception as e:
