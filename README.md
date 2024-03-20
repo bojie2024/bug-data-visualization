@@ -1,5 +1,5 @@
-### cypress 无法使用 使用cypress打开主站直接会被拦截 无法通过人机认证
-### Python + Selenium相对于其他自动化测试工具的优势和劣势：
+# cypress 无法使用 使用cypress打开主站直接会被拦截 无法通过人机认证
+# Python + Selenium相对于其他自动化测试工具的优势和劣势：
 ## 优势
 - **易学易用**：
   Python语法简洁直观，适合各个水平层次的开发者快速上手。
@@ -20,3 +20,11 @@
    当遇到涉及页面交互特别是异步加载内容时，调试Selenium脚本可能会比较困难。
 
 # 框架介绍
+##测试用例（Test Cases）：具体描述了每个测试场景的步骤和预期结果。
+##页面对象（Page Objects）：将与页面元素交互封装起来，使得代码更易维护。
+##数据驱动组件（DataReader）：负责提供参数化数据给到测试用例。
+##工具/服务层（Utilities/Services Layer）：提供日志、配置管理等支持功能。
+##报告层（Reporting Layer）：生成可视化的测试报告以便回顾结果。
+
+# 使用方法 
+## 安装Selenium库：确保已经安装了Selenium库以及对应的WebDriver。
